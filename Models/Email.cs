@@ -10,5 +10,6 @@ namespace contatinApi.Models
         public string SubHeading{get;set;}
         public bool IsComercial{get;set;}
         public int ContactId{get;set;}
+        public Contact Contact{get;set;}
     }
 }

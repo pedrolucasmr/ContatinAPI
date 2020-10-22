@@ -11,5 +11,6 @@ namespace contatinApi.Models
         public string Title{get;set;}
         public string SubTitle{get;set;}
         public int ContactId{get;set;}
+        public Contact Contact{get;set;}
     }
 }

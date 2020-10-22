@@ -19,6 +19,7 @@ namespace contatinapi
 {
     public class Startup
     {
+        private string _connectionString=null;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,6 +31,7 @@ namespace contatinapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            _connectionString=Configuration["db:connectionString"];
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

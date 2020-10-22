@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
 using System;
-using contatinApi.Models;
 using System.Collections.Generic;
 
 namespace contatinApi.Models
@@ -14,8 +12,10 @@ namespace contatinApi.Models
         public string Company {get;set;}
         public bool IsComercial {get;set;}
         public DateTime CreatedAt{set;get;}
-        private int UserId {get;set;}
-        //public List<Email> Emails{get;set;} 
-        //public List<Telephone> Telephones{get;set;}
+        public int UserId {get;set;}
+        public User User {get;set;} 
+        public List<Email> Emails{get;set;} 
+        public List<Telephone> Telephones{get;set;}
+        public List<ContactList> ContactLists{get;set;} 
     }
 }
