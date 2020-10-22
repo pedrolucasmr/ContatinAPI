@@ -18,7 +18,6 @@ namespace contatinApi.Controllers
     {
         [Route("Test")]
         public JsonResult GetAContact(){
-        
         }
     }
 }
